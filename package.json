@@ -1,0 +1,9 @@
+{
+  "name": "coding-challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/quintontcampbell/coding-challenges.git",
+  "author": "Quinton Campbell <quinton.t.campbell@gmail.com>",
+  "license": "MIT",
+  "type": "module"
+}
