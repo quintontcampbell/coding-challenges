@@ -1,10 +1,12 @@
 function findOutlier(integers) {
-  const reducer = (accumulator, currentValue) => accumulator + currentValue;
-  if (integers.reduce(reducer) % integers.length === 0) {
-    return integers.filter(x => x % 2 === 0)
+// i actually did it backwards, you're supposed to return the outlier
+  const evens = integers.filter(x => x % 2 === 0)
+  const odds = integers.filter(x => x % 2 !== 0)
+  if (evens.length > odds.length){
+    return evens
   } 
   else {
-    return integers.filter(x => x % 2 !== 0)
+    return odds
   }
 }
 export default findOutlier
