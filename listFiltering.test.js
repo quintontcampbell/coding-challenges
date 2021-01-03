@@ -2,16 +2,16 @@ import assert from 'assert'
 import filterList from './listFiltering.js'
 
 
-const test = (desc, fn) => {
-  console.log('----', desc)
-  try {
-    fn()
-  } catch (err) {
-    console.log(err.message)
-  }
-}
+// const test = (desc, fn) => {
+//   console.log('----', desc)
+//   try {
+//     fn()
+//   } catch (err) {
+//     console.log(err.message)
+//   }
+// }
 
-test('Return a new array with the strings filtered out', () => {
+it('Return a new array with the strings filtered out', () => {
   const result = filterList([1,2,'a','b'])
   const result1 = filterList([1,'a','b',0,15])
   const result2 = filterList([1,2,'aasf','1','123',123])
