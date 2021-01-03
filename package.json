@@ -5,5 +5,11 @@
   "repository": "https://github.com/quintontcampbell/coding-challenges.git",
   "author": "Quinton Campbell <quinton.t.campbell@gmail.com>",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "mocha": "^8.2.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
 }
