@@ -1,14 +1,15 @@
 const alphabetPosition = (text) => {
-  const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+  const alphabet = ['arraysamirite','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
   const textArray = text.split('')
   let positions = ""
   for (let i = 0; i < textArray.length; i++) {
-    positions += alphabet.filter(letter => {
-      letter.toLowerCase() === textArray[i]
-      return alphabet.indexOf(letter)
-    })
+    let textLetter = textArray[i]
+    let alphabetIndex = alphabet.findIndex(letter => letter === textLetter.toLowerCase())
+    if (alphabetIndex !== (-1)) {
+      positions += `${alphabetIndex} `
+    }
   }
-  return positions
+  return positions.trim()
 }
 
 export default alphabetPosition
